@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -12,35 +13,36 @@
     href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
     rel="stylesheet">
 </head>
-
 <body class="box-borde bg-gray-100">
-
-  <nav class="flex justify-between items-center my-10 rounded-full mx-2 bg-white ">
+  <nav class="flex justify-between items-center my-10 rounded-full mx-2 bg-white  max-[376px]:w-[343px] h-[48px]">
     <h2 class="text-[26px] mx-10 my-5 left-10 font-bold ">Acme <span
         class="relative text-[30px] bottom-3 right-2 font-bold">.</span> </h2>
-    <ul class="flex space-x-10 mx-20 my-5 text-[#1A1A2C] font-medium ">
+    <ul class="flex space-x-10 mx-20 my-5 text-[#1A1A2C] font-medium max-[376px]:hidden">
       <li><a href="#" class="hover:text-[#5E44FF]">Home</a> </li>
       <li><a href="#" class="hover:text-[#5E44FF]">Features</a> </li>
       <li><a href="#" class="hover:text-[#5E44FF]">Pricing </a> </li>
       <li><a href="#" class="hover:text-[#5E44FF]">Contact </a> </li>
     </ul>
+    <button class="sm:hidden mx-10">
   </nav>
-  <section class="p-[120px] flex flex-col gap-10">
+  <section class="p-[120px] flex flex-col gap-10 max-[376px]:p-[60px] max-[376px]:py-[10px]">
 
-    <div class=" text-center  "> <span
-        class=" bg-[#563AFF1A] rounded-full text-[#5E44FF] font-semibold px-4 py-2 ">🌈️Acme Productivity App</span>
+    <div class=" text-center max-[376px]:flex max-[376px]: w-[236px] max-[376px]:h-[40px]"> <span
+        class=" bg-[#563AFF1A] rounded-full text-[#5E44FF] font-semibold px-4 py-2 max-[376px]:w-[236px] max-[376px]:h-[40px] max-[376px]:text-[16px] ">🌈️Acme
+        Productivity App</span>
     </div>
-    <div class=" text-center  text-[80px] font-bold">
-      <h1>
+    <div class=" text-center text-[80px] font-bold">
+      <h1 class="max-[376px]:text-[44px] max-[378px]:leading-[0.98]">
         Boost Your <span class="text-[#5E44FF]">Product</span>ivity
       </h1>
-      <p class="text-[24px] font-bold"> Streamline your workflow with our all-in-one productivity app. </p>
+      <p class="text-[24px] font-bold  max-[376px]:text-[20px] max-[376px]:mt-3"> Streamline your workflow with our
+        all-in-one productivity app. </p>
     </div>
     </div>
     <div class="text-center  text-[24px]  font-bold ">
       <button class="text-center    rounded-2xl
          bg-black text-white px-9 py-4 text-base
-       hover:bg-[#5F5F76] focus:bg-[#35354D] focus:ring-4 focus:ring-[#5F5F76]">
+       hover:bg-[#5F5F76] focus:bg-[#35354D] focus:ring-4 focus:ring-[#575758]">
         Start Free Trial
       </button>
     </div>
@@ -83,79 +85,77 @@
         </div>
       </div>
     </div>
-
-
-
-
-    <div class="flex flex-col items-center">
-      <div
-        class="bg-[#FCFCFE] py-[80px] px-[120px] flex flex-col justify-center items-center w-[1199px] h-[666px] gap-[40px] rounded-[24px]"
-      >
-        <h2
-          class="text-[44px] text-[#1A1A2C] font-bold leading-[48px] tracking-[0.02em]"
-        >
-          Get in Touch
-        </h2>
-        <div class="flex flex-col w-[589px]">
-          <form action="" class="bg-white rounded-3xl">
-            <div class="flex flex-col gap-[4px] py-[12px]">
-              <label for="username" class="text-[#5F5F76]">Name</label>
-              <input
-                type="text"
-                id="username"
-                placeholder="   John Doe"
-                class="rounded-[12px] border-[1px] h-[48px] w-full border-[#E0E0ED] p-3 hover:border-[#B5A9FF] focus:outline-[#5E44FF]"
-              />
-            </div>
-
-            <div class="flex flex-col gap-[4px] py-[12px]">
-              <label for="email" class="text-[#5F5F76]">email</label>
-              <input
-                type="email"
-                id="email"
-                placeholder="   john@example.com"
-                class="rounded-[12px] border-[1px] h-[48px] w-full border-[#E0E0ED] p-3 hover:border-[#B5A9FF] focus:outline-[#5E44FF]"
-              />
-            </div>
-
-            <div class="flex flex-col gap-[4px] py-[12px]">
-              <label for="message" class="text-[#5F5F76]">Message</label>
-              <textarea
-                id="message"
-                placeholder="Your message..."
-                class="border-[1px] gap-[10px] rounded-[12px] h-[102px] w-full p-3 border-[#E0E0ED] hover:border-[#B5A9FF] focus:outline-[#5E44FF]"
-                style="text-align: left; vertical-align: top"
-              ></textarea>
-            </div>
-
-            <div class="flex justify-center font-semibold py-[16px]">
-              <button
-                class="text-white bg-[#1A1A2C] rounded-2xl h-[56px] w-full px-9 py-4 hover:bg-[#5F5F76] focus:bg-[#35354D] focus:ring-[#5F5F76]"
-              >
-                Submit
-              </button>
-            </div>
-          </form>
-        </div>
+    <div class="feature third bg-[#E8DCF6] rounded-3xl w-[387px] h-[272px]">
+      <div class="vector w-[60px] h-[60px] bg-white rounded-2xl p-4 m-4">
+        <svg xmlns="http://www.w3.org/2000/svg" shape-rendering="geometricPrecision" text-rendering="geometricPrecision"
+          image-rendering="optimizeQuality" fill-rule="evenodd" clip-rule="evenodd" viewBox="0 0 512 512">
+          <path
+            d="M189.759 8.784c136.533-36.583 276.872 44.442 313.456 180.974 36.585 136.534-44.441 276.873-180.974 313.457S45.369 458.773 8.785 322.241C-27.8 185.708 53.226 45.368 189.759 8.784zM119.191 295.6c69.524 90.131 212.547 88.174 274.078-.172l10.027 9.973c-68.927 116.97-214.851 121.104-294.594.63l10.489-10.431zm71.566-161.137c17.913 0 32.433 21.028 32.433 46.965 0 25.939-14.52 46.965-32.433 46.965s-32.434-21.026-32.434-46.965c0-25.937 14.521-46.965 32.434-46.965zm130.487 0c17.912 0 32.433 21.028 32.433 46.965 0 25.939-14.521 46.965-32.433 46.965-17.913 0-32.434-21.026-32.434-46.965 0-25.937 14.521-46.965 32.434-46.965z" />
+        </svg>
+      </div>
+      <div class="feature-detail p-5">
+        <h3 class="text-2xl font-semibold">Intuitive Interface</h3>
+        <p class="description text-[#5F5F76] font-medium mt-5">
+          Our user-friendly interface makes it easy for anyone to streamline
+          their workflow.
+        </p>
       </div>
     </div>
+  </div>
 
-    <footer class="flex flex-row justify-center pb-[100px]">
-      <div
-        class="flex flex-row justify-between text-[#5F5F76] font-medium mt-[80px] w-[1199px]"
-      >
-        <p>Acme productivity app ©2024 </p>
-        <div
-          class="flex flex-row gap-[25px] mr-[10px] text-[#1A1A2C] font-semibold"
-        >
-          <a href="#" class="hover:text-[#5E44FF] hover:underline">FAQ</a>
-          <a href="#" class="hover:text-[#5E44FF] hover:underline">Terms</a>
-          <a href="#" class="hover:text-[#5E44FF] hover:underline">AI Policy</a>
-          <a href="#" class="hover:text-[#5E44FF] hover:underline">Pricing</a>
-        </div>
+
+
+
+  <div class="flex flex-col items-center">
+    <div
+      class="bg-[#FCFCFE] py-[80px] px-[120px] flex flex-col justify-center items-center w-[1199px] h-[666px] gap-[40px] rounded-[24px]">
+      <h2 class="text-[44px] text-[#1A1A2C] font-bold leading-[48px] tracking-[0.02em]">
+        Get in Touch
+      </h2>
+      <div class="flex flex-col w-[589px]">
+        <form action="" class="bg-white rounded-3xl">
+          <div class="flex flex-col gap-[4px] py-[12px]">
+            <label for="username" class="text-[#5F5F76]">Name</label>
+            <input type="text" id="username" placeholder="   John Doe"
+              class="rounded-[12px] border-[1px] h-[48px] w-full border-[#E0E0ED] p-3 hover:border-[#B5A9FF] focus:outline-[#5E44FF]" />
+          </div>
+
+          <div class="flex flex-col gap-[4px] py-[12px]">
+            <label for="email" class="text-[#5F5F76]">email</label>
+            <input type="email" id="email" placeholder="   john@example.com"
+              class="rounded-[12px] border-[1px] h-[48px] w-full border-[#E0E0ED] p-3 hover:border-[#B5A9FF] focus:outline-[#5E44FF]" />
+          </div>
+
+          <div class="flex flex-col gap-[4px] py-[12px]">
+            <label for="message" class="text-[#5F5F76]">Message</label>
+            <textarea id="message" placeholder="Your message..."
+              class="border-[1px] gap-[10px] rounded-[12px] h-[102px] w-full p-3 border-[#E0E0ED] hover:border-[#B5A9FF] focus:outline-[#5E44FF]"
+              style="text-align: left; vertical-align: top"></textarea>
+          </div>
+
+          <div class="flex justify-center font-semibold py-[16px]">
+            <button
+              class="text-white bg-[#1A1A2C] rounded-2xl h-[56px] w-full px-9 py-4 hover:bg-[#5F5F76] focus:bg-[#35354D] focus:ring-[#5F5F76]">
+              Submit
+            </button>
+          </div>
+        </form>
       </div>
     </div>
-    </footer>
+  </div>
+
+  <footer class="flex flex-row justify-center pb-[100px]">
+    <div class="flex flex-row justify-between text-[#5F5F76] font-medium mt-[80px] w-[1199px]">
+      <p>Acme productivity app ©2024 </p>
+      <div class="flex flex-row gap-[25px] mr-[10px] text-[#1A1A2C] font-semibold">
+        <a href="#" class="hover:text-[#5E44FF] hover:underline">FAQ</a>
+        <a href="#" class="hover:text-[#5E44FF] hover:underline">Terms</a>
+        <a href="#" class="hover:text-[#5E44FF] hover:underline">AI Policy</a>
+        <a href="#" class="hover:text-[#5E44FF] hover:underline">Pricing</a>
+      </div>
+    </div>
+    </div>
+  </footer>
 </body>
-</html>
 
+</html>
